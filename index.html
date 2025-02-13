@@ -9,8 +9,32 @@
 	<body>
 		<form id="eventRegistrationForm" action="#">
 			<h1>Event Registration</h1>
-			<!-- Additional form elements will be added here -->
-			<button type="submit">Register</button>
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="Full Name" required />
+
+        <!--Email Field-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Event Type Dropdown -->
+        <label for="eventType">Select Event:</label>
+        <select id="eventType" name="eventType" required>
+          <option value="">Select an event</option>
+          <option value="concert">Concert</option>
+          <option value="Party">Workshop</option>
+          <option value="sports">Sports Event</option>
+        </select>
+      <!-- Number of Tickets -->
+        <h2>Ticket Types</h2>
+        <label for="tickets">Early Birds</label>
+        <br>
+        <label for="tickets">Regular</label>
+        <br>
+        <label for="tickets">Guests</label>
+        <br>
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
 		</form>
 		<script src="script.js"></script>
 	</body>
