@@ -43,3 +43,16 @@ button {
 button:hover {
 	background-color: #005f73;
 }
+
+.error-message {
+	color: red;
+	font-size: 0.9em;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	display: block;
+	visibility: hidden;
+}
+
+.error-visible {
+	visibility: visible;
+}

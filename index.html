@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
-		<title>Event Registration Form</title>
-	</head>
-	<body>
-		<form id="eventRegistrationForm" action="#">
-			<h1>Event Registration</h1>
-        <!-- Name Field -->
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="Full Name" required />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Event Registration Form</title>
+  </head>
+  <body>
+    <form id="eventRegistrationForm">
+      <h1>Event Registration</h1>
 
-        <!--Email Field-->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+      <!-- Name Field -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="fullName" required />
 
-        <!-- Event Type Dropdown -->
-        <label for="eventType">Select Event:</label>
-        <select id="eventType" name="eventType" required>
-          <option value="">Select an event</option>
-          <option value="concert">Concert</option>
-          <option value="Party">Workshop</option>
-          <option value="sports">Sports Event</option>
-        </select>
-      <!-- Number of Tickets -->
-        <h2>Ticket Types</h2>
-        <label for="tickets">Early Birds</label>
-        <br>
-        <label for="tickets">Regular</label>
-        <br>
-        <label for="tickets">Guests</label>
-        <br>
-        <!-- Submit Button -->
-        <button type="submit">Register</button>
-		</form>
-		<script src="script.js"></script>
-	</body>
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="emailAddress" required />
+
+      <!-- Number of Tickets Field -->
+      <label for="numTickets">Number of Tickets</label>
+      <input type="number" id="tickets" name="numTickets" min="1" max="10" required />
+
+      <!-- Event Type Dropdown -->
+      <label for="eventType">Select Event:</label>
+      <select id="eventType" name="eventType" required>
+        <option value="">Select an event</option>
+        <option value="concert">Concert</option>
+        <option value="Party">Workshop</option>
+        <option value="sports">Sports Event</option>
+      </select>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
 </html>
